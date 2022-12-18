@@ -1,0 +1,65 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,800;1,200;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-hex: #00483d;
+    --color-hax: #00917a;
+    --color-lime: #7fd6cb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* width */
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 3px;
+}
+
+/* Track */
+html *::-webkit-scrollbar-track {
+    box-shadow: inset 5px 5px 10px #7d7b7b;
+    border-radius: 10px;
+}
+
+/* Handle */
+html *::-webkit-scrollbar-thumb {
+    background-color: var(--color-hex);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+html *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-hex);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+.container {
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
+}
