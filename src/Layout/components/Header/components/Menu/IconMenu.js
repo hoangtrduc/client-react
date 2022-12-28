@@ -12,166 +12,166 @@ export const menu = [
         id: 1,
         icon: <MdPhoneIphone />,
         name: "Điện thoại",
-        to: "/SmartPhone",
+        href: '/Products',
         submenu: true,
         sublinks: [
             {
                 head: "HÃNG SẢN XUẤT",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: 20,
                         name: "OPPO",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 21,
                         name: "Vivo",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 22,
                         name: "XOR",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 23,
                         name: "Philips",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 24,
                         name: "TECNO",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
             {
                 head: "",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: 25,
                         name: "Samsung",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 26,
                         name: "Nokia",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 27,
                         name: "Nubia",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 28,
                         name: "Masstel",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 29,
                         name: "Itel",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "ZTE",
                         name: "ZTE",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
             {
                 head: "",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: 30,
                         name: "Xiaomi",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 31,
                         name: "Realme",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 32,
                         name: "Energizer",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 33,
                         name: "TCL",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 34,
                         name: "BPhone",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
             {
                 head: "Mức giá",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: 35,
                         name: "Trên 100 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 36,
                         name: "Dưới 1 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 37,
                         name: "Từ 2 đến 3 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 38,
                         name: "Từ 3 đến 4 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 39,
                         name: "Từ 6 đến 8 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: 40,
                         name: "Từ 15 đến 20 triệu",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
             {
                 head: "quan tâm nhất",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: "Hôm nay",
                         name: "Hôm nay",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Tuần này",
                         name: "Tuần này",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Tháng này",
                         name: "Tháng này",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Năm này",
                         name: "Năm này",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -181,32 +181,32 @@ export const menu = [
         id: 2,
         icon: <BsSmartwatch />,
         name: "Đồng hồ",
-        to: "/",
+        href: "/",
         submenu: true,
         sublinks: [
             {
                 head: "ĐỒNG HỒ",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: "Apple",
                         name: "Apple",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Tic Watch",
                         name: "Tic Watch",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Masstel",
                         name: "Masstel",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Top Đồng hồ thông minh",
                         name: "Top Đồng hồ thông minh",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -215,22 +215,22 @@ export const menu = [
                     {
                         id: "Samsung",
                         name: "Samsung",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Amazfit",
                         name: "Amazfit",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "OPPO",
                         name: "OPPO",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Top vòng đeo tay",
                         name: "Top vòng đeo tay",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -239,22 +239,22 @@ export const menu = [
                     {
                         id: "Xiaomi",
                         name: "Xiaomi",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Đồng hồ trẻ em",
                         name: "Đồng hồ trẻ em",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "realme",
                         name: "realme",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Fitbit",
                         name: "Fitbit",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -263,17 +263,17 @@ export const menu = [
                     {
                         id: "Garmin",
                         name: "Garmin",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Huawei",
                         name: "Huawei",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "SoundPEATS",
                         name: "SoundPEATS",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -283,32 +283,32 @@ export const menu = [
         id: 3,
         icon: <BsLaptop />,
         name: "Laptop",
-        to: "/",
+        href: "/",
         submenu: true,
         sublinks: [
             {
                 head: "HÃNG SẢN XUẤT",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: "Apple",
                         name: "Apple",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Dell",
                         name: "Dell",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Huawei",
                         name: "Huawei",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "MSI",
                         name: "MSI",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -317,22 +317,22 @@ export const menu = [
                     {
                         id: "Acer",
                         name: "Acer",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "GIGABYTE",
                         name: "GIGABYTE",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Lenovo",
                         name: "Lenovo",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Surface",
                         name: "Surface",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -341,43 +341,43 @@ export const menu = [
                     {
                         id: "ASUS",
                         name: "ASUS",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "HP",
                         name: "HP",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "LG",
                         name: "LG",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Xiaomi",
                         name: "Xiaomi",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
             {
                 head: "Mức giá",
-                to: "/",
+                href: "/",
                 sublink: [
                     {
                         id: "Trên 20 triệu",
                         name: "Trên 20 triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Từ 12 đến 15 Triệu",
                         name: "Từ 12 đến 15 Triệu",
-                        to: "/",
+                        href: "/",
                     },
                     {
                         id: "Từ 15 đến 20 Triệu",
                         name: "Từ 15 đến 20 Triệu",
-                        to: "/",
+                        href: "/",
                     },
                 ]
             },
@@ -388,84 +388,84 @@ export const menu = [
         id: 4,
         icon: <AiOutlineDesktop />,
         name: "Màn hình",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 5,
         icon: <BsDisplay />,
         name: "Smart tv",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 6,
         icon: <AiOutlineTablet />,
         name: "Tablet",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 7,
         icon: <FiHeadphones />,
         name: "âm thanh",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 8,
         icon: <AiOutlineHome />,
         name: "Smart home",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 9,
         icon: <GiCharging />,
         name: "Phụ kiện",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 10,
         icon: <SlGameController />,
         name: "Đồ chơi công nghệ",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 11,
         icon: <MdPhonelinkSetup />,
         name: "Máy trôi",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 12,
         icon: <BsWrench />,
         name: "Sửa chữa",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 13,
         icon: <BsSim />,
         name: "Sim thẻ",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 14,
         icon: <BsNewspaper />,
         name: "Tin tức",
-        to: "/",
+        href: "/",
 
     },
     {
         id: 15,
         icon: <IoIosFlash />,
         name: "Ưu đãi",
-        to: "/",
+        href: "/",
 
     },
 ]

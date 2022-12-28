@@ -13,6 +13,8 @@ function Button({
     primary = false,
     slider = false,
     disabled = false,
+    apple = false,
+    enabled = false,
     ...passProps
 }) {
     let Comp = 'button';
@@ -41,6 +43,8 @@ function Button({
         primary,
         slider,
         disabled,
+        apple,
+        enabled,
     })
 
     return (

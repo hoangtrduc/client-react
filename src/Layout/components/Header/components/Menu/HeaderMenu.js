@@ -12,7 +12,7 @@ function HeaderMenu() {
             <ul className={cx('menu-ul')}>
                 {menu.map((item) => (
                     <li key={item.id} className={cx(' mx-4 my-2 group')}>
-                        <Link className={cx('list-menu')} href={item.to}>
+                        <Link className={cx('list-menu')} to={item.href}>
                             <span className={cx('flex items-center justify-center text-white text-5xl')}>{item.icon}</span>
                             <span className={cx(' text-xl text-white ')}>{item.name}</span>
                         </Link>
@@ -28,11 +28,11 @@ function HeaderMenu() {
                                             {
                                                 item.sublinks.map((mysublinks) => (
                                                     <div className={cx(" pb-6 w-72 pl-3 ")}>
-                                                        <h4 className={cx("uppercase font-semibold flex justify-start")}><a href={mysublinks.to}>{mysublinks.head}</a></h4>
+                                                        <h4 className={cx("uppercase font-semibold flex justify-start")}><a href={mysublinks.href}>{mysublinks.head}</a></h4>
                                                         <ul className={cx("pt-3")}>
                                                             {mysublinks.sublink.map((slink) => (
                                                                 <li key={slink.id} className={cx("text-xl hover:text-emerald-500 flex justify-start py-1")}>
-                                                                    <Link href={slink.to} className={cx("text-xl hover:text-emerald-500")}>
+                                                                    <Link href={slink.href} className={cx("text-xl hover:text-emerald-500")}>
                                                                         {slink.name}
                                                                     </Link>
                                                                 </li>

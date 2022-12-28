@@ -5,14 +5,12 @@ import Footer from './Footer/footer';
 
 
 function DefaultLayout({ children }) {
-    return <div >
+    return <div className='wrapper'>
         <Header />
-        <div className='container '>
-            <div className='content mt-2'>
-                {children}
-            </div>
+        <div className='container'>
+            {children}
         </div>
-        <div className='container'><Footer /></div>
+        <Footer />
     </div>
 }
 

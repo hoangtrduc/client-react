@@ -6,7 +6,7 @@ import DefaultLayout from './Layout/DefaultLayout';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App ">
         <Routes>
           {publicRouters.map((route, index) => {
             const Page = route.component;

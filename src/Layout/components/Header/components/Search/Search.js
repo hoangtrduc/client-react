@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import { BsSearch } from 'react-icons/bs';
@@ -13,35 +13,33 @@ import Button from '~/components/Button/Button';
 const cx = classNames.bind(styles);
 
 function Search() {
-    const [searchValue, SetSearchValue] = useState('');
+    const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
     const [showResult, setShowResult] = useState(true)
 
     const debounced = useDebounce(searchValue, 500);
 
+    const inputRef = useRef();
 
     useEffect(() => {
         if (!debounced.trim()) {
             setSearchResult([]);
-            return;
+            return
         }
 
-        axiosClient.get('/products/')
+        axiosClient.get('/products/search/', {
+            p: debounced,
+        })
             .then((res) => {
-                setSearchResult(res.data)
+                // console.log(res.data)
+                setSearchResult(res.data.key)
             })
             .catch((err) => {
                 console.log(err)
             })
-
     }, [debounced])
 
-    const handleChange = (e) => {
-        const searchValue = e.target.value;
-        if (!searchValue.startsWith(' ')) {
-            SetSearchValue(searchValue);
-        }
-    };
+
 
     const handleHideResult = () => {
         setShowResult(false)
@@ -55,12 +53,9 @@ function Search() {
                 render={attrs => (
                     <div className={cx('search-result')} tabIndex="-1" {...attrs} >
                         <Wrapper >
-                            {searchResult.map((products) => (
-                                <SearchItem key={products.id} data={products} />
+                            {searchResult.map((result) => (
+                                <SearchItem key={result._id} data={result} />
                             ))}
-                            <h4 className={cx('px-5 text-teal-600 py-3 cursor-pointer')}>
-                                hiển thị kết quả
-                            </h4>
                         </Wrapper>
                     </div>
                 )}
@@ -69,10 +64,11 @@ function Search() {
                 <div className={cx('search')}>
                     <div className={cx('flex')}>
                         <input
+                            ref={inputRef}
                             value={searchValue}
                             className={cx('search-inp')}
                             type="text" placeholder='Hôm nay bạn cần tìm gì?' spellCheck={false}
-                            onChange={handleChange}
+                            onChange={(e) => setSearchValue(e.target.value)}
                             onFocus={() => setShowResult(true)}
                         />
                         <Button className={cx('search-btn')} >

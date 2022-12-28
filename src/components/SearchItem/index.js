@@ -3,14 +3,16 @@ import classNames from 'classnames/bind';
 import styles from './SearchItem.module.scss';
 import { Link } from 'react-router-dom';
 
+import { API_URL } from '~/constants/URL';
+
 const cx = classNames.bind(styles);
 
 function SearchItem({ data }) {
     return (
-        <Link to={`${data.name}`} className={cx(' ')}>
+        <Link to={`/${data.name}`} className={cx(' ')}>
             <div className={cx(' flex cursor-pointer border-b border-slate-300 px-4 pt-4 pb-4 content-center search-item')}>
                 <div className={cx(' w-[50px]  mr-3')}>
-                    <img src={`http://localhost:9000/${data.imageUrl}`} alt={data.name} />
+                    <img src={`${API_URL}${data.imageUrl}`} alt={data.name} />
                 </div>
                 <div className={cx(' text-2xl ')}>
                     <h3 className={cx(' font-bold  ')}><a href="/">{data.name}</a></h3>
